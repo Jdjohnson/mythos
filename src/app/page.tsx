@@ -96,9 +96,13 @@ export default function Home() {
 
           <ScrollReveal delay={0.2}>
             <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
-              What separates Mythos from previous models: it can write working
-              exploits. Previous AI models could find vulnerabilities or write
-              exploits. Mythos does both, end to end, without human supervision.
+              What separates Mythos from previous models: it can reliably write
+              working exploits. Previous AI models could find vulnerabilities
+              but almost never turned them into functional attacks. Opus 4.6
+              managed it twice out of several hundred attempts on Firefox&apos;s
+              JavaScript engine. Mythos succeeded 181 times on the same task,
+              converting 72% of the vulnerabilities it found into working
+              exploits.
             </p>
           </ScrollReveal>
         </div>
