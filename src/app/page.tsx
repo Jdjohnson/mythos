@@ -267,10 +267,17 @@ export default function Home() {
 
           <ScrollReveal delay={0.1}>
             <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
-              The decision to withhold Mythos is the first time a major AI lab
-              has indefinitely shelved a completed frontier model for safety
-              reasons. Neither OpenAI nor Google has announced similar
-              restrictions on their newest models.
+              A few things to keep in perspective here.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.15}>
+            <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
+              Anthropic released Opus 4.6 in the same competitive window as
+              GPT-5.4, Gemini 3.1 Pro, and Grok 4.20. They are racing. They
+              shipped a frontier model just like everyone else. Mythos is the
+              one they held back, and they made a public event out of holding
+              it back.
             </p>
           </ScrollReveal>
         </div>
@@ -285,14 +292,28 @@ export default function Home() {
         <div className="max-w-[720px] mx-auto">
           <ScrollReveal>
             <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
-              Anthropic isn&apos;t holding back because they&apos;re behind.
-              They&apos;re holding back while they&apos;re ahead. That&apos;s
-              either the most responsible thing a tech company has done in a
-              decade, or it&apos;s sophisticated marketing. Maybe both.
+              We don&apos;t know what other labs have built and quietly shelved.
+              OpenAI, Google, xAI, and Meta don&apos;t publish announcements
+              about models they chose not to release. It&apos;s possible
+              Anthropic is the only lab that built something this dangerous and
+              decided to sit on it. It&apos;s also possible others made the same
+              call without the press release. We have no way to know.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
+            <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
+              What we do know is that the withholding announcement itself is a
+              strategic move. It positions Anthropic as the responsible lab. It
+              creates scarcity and mystique around a model. It generates exactly
+              the kind of coverage you&apos;re reading right now. That
+              doesn&apos;t mean it&apos;s insincere. It means the restraint and
+              the marketing aren&apos;t separate things. They&apos;re the same
+              thing.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.15}>
             <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
               Anthropic revised its Responsible Scaling Policy in February 2026,
               weeks before the Mythos testing began. They dropped their
@@ -304,22 +325,24 @@ export default function Home() {
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.15}>
+          <ScrollReveal delay={0.2}>
             <p className="text-[17px] leading-[1.65] text-text-secondary mb-5">
               The cybersecurity community is skeptical. When Mythos leaked,
               security professionals on Reddit were muted compared to AI
               enthusiast communities. The people who spend their careers in this
               space see a lot of breathless announcements. But the containment
-              breach is new. The scale of vulnerability discovery is new. And
-              Anthropic putting their most capable model on the shelf, in a
-              market where capability is competitive advantage, is new.
+              breach is new. The scale of vulnerability discovery is new. And a
+              lab publicly choosing to shelve a model it spent millions
+              training, in a market where capability is competitive advantage,
+              is new.
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2}>
+          <ScrollReveal delay={0.25}>
             <p className="text-[17px] leading-[1.65] text-text-primary font-medium">
-              Anthropic chose restraint when competitors didn&apos;t. Whether
-              that holds is what I&apos;m watching.
+              Whether the withholding is genuine caution, calculated
+              positioning, or both at once, the capability itself is real.
+              That&apos;s the part worth paying attention to.
             </p>
           </ScrollReveal>
         </div>
@@ -533,11 +556,13 @@ export default function Home() {
           <ScrollReveal delay={0.2}>
             <div className="mt-12 pt-10 border-t border-white/10">
               <p className="font-[family-name:var(--font-display)] text-[clamp(20px,3vw,28px)] leading-[1.35] text-white">
-                Right now, Anthropic is the only major lab that looked at what
-                they built and decided the world wasn&apos;t ready for it. The
-                rest shipped. That gap between restraint and release is closing
-                fast, and when it does, the questions above stop being
-                theoretical.
+                Right now, Anthropic is the only lab that publicly withheld a
+                model and told us why. Whether they&apos;re the only ones who
+                made that call is something we can&apos;t verify. What we can
+                verify is that the capability exists, the gap between finding
+                vulnerabilities and exploiting them has collapsed, and the
+                questions above stop being theoretical the moment similar models
+                reach the open market.
               </p>
             </div>
           </ScrollReveal>

@@ -6,6 +6,13 @@ import { useRef } from "react";
 const labs = [
   {
     lab: "Anthropic",
+    model: "Opus 4.6",
+    status: "released",
+    date: "2026",
+    note: "Shipping frontier model, competing directly",
+  },
+  {
+    lab: "Anthropic",
     model: "Mythos",
     status: "withheld",
     date: "Apr 2026",
@@ -48,7 +55,7 @@ export default function CompetitiveLandscape() {
   return (
     <div ref={ref} className="w-full max-w-[900px] mx-auto">
       <p className="font-[family-name:var(--font-body)] text-[13px] uppercase tracking-[0.12em] text-text-muted mb-8">
-        Frontier model releases — April 2026
+        Frontier models — April 2026
       </p>
 
       <div className="space-y-[2px]">
@@ -56,7 +63,7 @@ export default function CompetitiveLandscape() {
           const isWithheld = lab.status === "withheld";
           return (
             <motion.div
-              key={lab.lab}
+              key={`${lab.lab}-${lab.model}`}
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{
@@ -117,7 +124,8 @@ export default function CompetitiveLandscape() {
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
-        One lab chose restraint. The rest shipped.
+        Every lab shipped. Anthropic also withheld one and told us about it. We
+        don&apos;t know what the others chose not to announce.
       </motion.p>
     </div>
   );
