@@ -5,11 +5,39 @@ import { useRef } from "react";
 
 const labs = [
   {
+    lab: "Google",
+    model: "Gemini 3.1 Pro",
+    status: "released",
+    date: "Feb 2026",
+    note: "Reasoning gains, general availability",
+  },
+  {
+    lab: "xAI",
+    model: "Grok 4.20",
+    status: "released",
+    date: "Feb 2026",
+    note: "Multi-agent collaboration, public beta",
+  },
+  {
     lab: "Anthropic",
     model: "Opus 4.6",
     status: "released",
-    date: "2026",
-    note: "Shipping frontier model, competing directly",
+    date: "Feb 2026",
+    note: "1M context, agent teams",
+  },
+  {
+    lab: "OpenAI",
+    model: "GPT-5.4",
+    status: "released",
+    date: "Mar 2026",
+    note: "Agentic capabilities, general availability",
+  },
+  {
+    lab: "Meta",
+    model: "Llama 4 Maverick",
+    status: "released",
+    date: "Apr 2026",
+    note: "Open weights, 128-expert MoE",
   },
   {
     lab: "Anthropic",
@@ -17,34 +45,6 @@ const labs = [
     status: "withheld",
     date: "Apr 2026",
     note: "Partner-only access via Project Glasswing",
-  },
-  {
-    lab: "OpenAI",
-    model: "GPT-5.4",
-    status: "released",
-    date: "Mar 2026",
-    note: "General availability with agentic capabilities",
-  },
-  {
-    lab: "Google",
-    model: "Gemini 3.1 Pro",
-    status: "released",
-    date: "Feb 2026",
-    note: "No announced restrictions",
-  },
-  {
-    lab: "xAI",
-    model: "Grok 4.20",
-    status: "released",
-    date: "Mar 2026",
-    note: "Limited public safety documentation",
-  },
-  {
-    lab: "Meta",
-    model: "Llama 4 Maverick",
-    status: "released",
-    date: "2026",
-    note: "Open weights release",
   },
 ];
 
@@ -124,8 +124,8 @@ export default function CompetitiveLandscape() {
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
-        Every lab shipped. Anthropic also withheld one and told us about it. We
-        don&apos;t know what the others chose not to announce.
+        Six frontier models in ten weeks. The capability curve isn&apos;t
+        slowing down.
       </motion.p>
     </div>
   );
